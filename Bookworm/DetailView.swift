@@ -31,6 +31,11 @@ struct DetailView: View {
                     .offset(x: -5, y: -5)
             }
             
+            // Challenge 3: add a date to the Book and display it in DetailView
+            Text(book.date, format: .dateTime.day().month().year())
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            
             Text(book.author)
                 .font(.title)
                 .foregroundStyle(.secondary)
